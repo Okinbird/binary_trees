@@ -6,6 +6,27 @@
 #include "4-binary_tree_is_leaf.c"
 
 /**
+ * height - mesures height
+ * @tree: pointer to the node
+ * Return: height
+ **/
+int height(binary_tree_t *tree)
+{
+	size_t left, right;
+
+	if (!tree)
+		return (0);
+	if (!tree->left && !tree->right)
+		return (0);
+	right = height(tree->right) + 1;
+	left = height(tree->left) + 1;
+	if (left > right)
+		return (left);
+	else
+		return (right);
+}
+
+/**
  * swaps - swaps number to be a heap
  * @node: pointer to the node input
  * Return: pointer to node output
@@ -69,6 +90,7 @@ void levelorder(heap_t *tree, heap_t **last_node)
 		preorder(tree, i, 0, last_node, &flag);
 	}
 }
+
 /**
  * heap_insert - inserts node in a heap
  * @root: pointer to the root
