@@ -1,4 +1,5 @@
 #include "binary_trees.h"
+#include "0-binary_tree_node.c"
 
 /**
  * max - Finds the maximum node in a tree.
