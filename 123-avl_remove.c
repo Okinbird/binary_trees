@@ -1,11 +1,13 @@
 #include "binary_trees.h"
+
 /**
  * avl_remove - Remove a node from tree
  * @root: pointer to the root of tree
  * @value: value to remove
  * Return: pointer to new root of tree
  **/
-avl_t *avl_remove(avl_t *root, int value);
+
+avl_t *avl_remove(avl_t *root, int value)
 {
 	avl_t *tmp, *new;
 	int flag;
