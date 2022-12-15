@@ -4,7 +4,6 @@
 #include "2-binary_tree_insert_right.c"
 #include "16-binary_tree_is_perfect.c"
 #include "4-binary_tree_is_leaf.c"
-#include "0-binary_tree_node.c"
 
 /**
  * height - mesures height
