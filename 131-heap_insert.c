@@ -1,4 +1,9 @@
 #include "binary_trees.h"
+#include "17-binary_tree_sibling.c"
+#include "1-binary_tree_insert_left.c"
+#include "2-binary_tree_insert_right.c"
+#include "16-binary_tree_is_perfect.c"
+#include "4-binary_tree_is_leaf.c"
 
 /**
  * swaps - swaps number to be a heap
@@ -45,6 +50,7 @@ void preorder(heap_t *tree, int level, int ref, heap_t **last_node, int *flag)
 	if (tree->right)
 		preorder(tree->right, level, ref + 1, last_node, flag);
 }
+
 /**
  * levelorder - traverses in zig-zag
  * @tree: pointer to the root
