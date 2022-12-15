@@ -1,4 +1,5 @@
 #include "binary_trees.h"
+
 /**
  * heap_to_sorted_array - convert a Binary Max Heap to sorted array
  * @heap: pointer to heap
